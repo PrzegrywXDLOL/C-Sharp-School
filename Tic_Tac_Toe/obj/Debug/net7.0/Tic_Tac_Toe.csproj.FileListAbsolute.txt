@@ -1,0 +1,28 @@
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.exe
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.deps.json
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.runtimeconfig.json
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.dll
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.pdb
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.GeneratedMSBuildEditorConfig.editorconfig
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.AssemblyInfoInputs.cache
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.AssemblyInfo.cs
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.csproj.CoreCompileInputs.cache
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.dll
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\refint\Tic_Tac_Toe.dll
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.pdb
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.genruntimeconfig.cache
+g:\C#\Tic Tac Toe\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net7.0\ref\Tic_Tac_Toe.dll
+g:\C#\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.exe
+g:\C#\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.deps.json
+g:\C#\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.runtimeconfig.json
+g:\C#\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.dll
+g:\C#\Tic_Tac_Toe\bin\Debug\net7.0\Tic_Tac_Toe.pdb
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.GeneratedMSBuildEditorConfig.editorconfig
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.AssemblyInfoInputs.cache
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.AssemblyInfo.cs
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.csproj.CoreCompileInputs.cache
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.dll
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\refint\Tic_Tac_Toe.dll
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.pdb
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\Tic_Tac_Toe.genruntimeconfig.cache
+g:\C#\Tic_Tac_Toe\obj\Debug\net7.0\ref\Tic_Tac_Toe.dll
