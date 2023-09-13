@@ -1,0 +1,14 @@
+C:\Users\uczen\Desktop\OOP\bin\Debug\OOP.exe.config
+C:\Users\uczen\Desktop\OOP\bin\Debug\OOP.exe
+C:\Users\uczen\Desktop\OOP\bin\Debug\OOP.pdb
+C:\Users\uczen\Desktop\OOP\obj\Debug\OOP.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\OOP\obj\Debug\OOP.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\OOP\obj\Debug\OOP.exe
+C:\Users\uczen\Desktop\OOP\obj\Debug\OOP.pdb
+G:\C-Sharp\OOP\obj\Debug\OOP.csproj.AssemblyReference.cache
+G:\C-Sharp\OOP\obj\Debug\OOP.csproj.CoreCompileInputs.cache
+G:\C-Sharp\OOP\obj\Debug\OOP.exe
+G:\C-Sharp\OOP\obj\Debug\OOP.pdb
+G:\C-Sharp\OOP\bin\Debug\OOP.exe.config
+G:\C-Sharp\OOP\bin\Debug\OOP.exe
+G:\C-Sharp\OOP\bin\Debug\OOP.pdb

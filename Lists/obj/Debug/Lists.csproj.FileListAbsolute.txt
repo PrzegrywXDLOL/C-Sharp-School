@@ -1,0 +1,9 @@
+C:\Users\uczen\Desktop\Lists\bin\Debug\Lists.exe.config
+C:\Users\uczen\Desktop\Lists\bin\Debug\Lists.exe
+C:\Users\uczen\Desktop\Lists\bin\Debug\Lists.pdb
+C:\Users\uczen\Desktop\Lists\obj\Debug\Lists.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\Lists\obj\Debug\Lists.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\Lists\obj\Debug\Lists.exe
+C:\Users\uczen\Desktop\Lists\obj\Debug\Lists.pdb
+G:\C-Sharp\Lists\obj\Debug\Lists.exe
+G:\C-Sharp\Lists\obj\Debug\Lists.pdb

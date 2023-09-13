@@ -1,0 +1,4 @@
+g:\C-Sharp\Lists\obj\Debug\net7.0\Lists.GeneratedMSBuildEditorConfig.editorconfig
+g:\C-Sharp\Lists\obj\Debug\net7.0\Lists.AssemblyInfoInputs.cache
+g:\C-Sharp\Lists\obj\Debug\net7.0\Lists.AssemblyInfo.cs
+g:\C-Sharp\Lists\obj\Debug\net7.0\Lists.csproj.CoreCompileInputs.cache

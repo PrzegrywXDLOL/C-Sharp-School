@@ -26,3 +26,17 @@ g:\C#\Number_Guess_Game\obj\Debug\net7.0\refint\Number_Guess_Game.dll
 g:\C#\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.pdb
 g:\C#\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.genruntimeconfig.cache
 g:\C#\Number_Guess_Game\obj\Debug\net7.0\ref\Number_Guess_Game.dll
+G:\C-Sharp\Number_Guess_Game\bin\Debug\net7.0\Number_Guess_Game.exe
+G:\C-Sharp\Number_Guess_Game\bin\Debug\net7.0\Number_Guess_Game.deps.json
+G:\C-Sharp\Number_Guess_Game\bin\Debug\net7.0\Number_Guess_Game.runtimeconfig.json
+G:\C-Sharp\Number_Guess_Game\bin\Debug\net7.0\Number_Guess_Game.dll
+G:\C-Sharp\Number_Guess_Game\bin\Debug\net7.0\Number_Guess_Game.pdb
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.GeneratedMSBuildEditorConfig.editorconfig
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.AssemblyInfoInputs.cache
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.AssemblyInfo.cs
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.csproj.CoreCompileInputs.cache
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.dll
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\refint\Number_Guess_Game.dll
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.pdb
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\Number_Guess_Game.genruntimeconfig.cache
+G:\C-Sharp\Number_Guess_Game\obj\Debug\net7.0\ref\Number_Guess_Game.dll
