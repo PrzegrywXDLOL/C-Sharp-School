@@ -1,0 +1,15 @@
+C:\Users\uczen\Desktop\egz\WPF APP\bin\Debug\WPF APP.exe.config
+C:\Users\uczen\Desktop\egz\WPF APP\bin\Debug\WPF APP.exe
+C:\Users\uczen\Desktop\egz\WPF APP\bin\Debug\WPF APP.pdb
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF APP.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\MainWindow.g.cs
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\App.g.cs
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF APP_MarkupCompile.cache
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF APP_MarkupCompile.lref
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\MainWindow.baml
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF APP.g.resources
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF_APP.Properties.Resources.resources
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF APP.csproj.GenerateResource.cache
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF APP.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF APP.exe
+C:\Users\uczen\Desktop\egz\WPF APP\obj\Debug\WPF APP.pdb
