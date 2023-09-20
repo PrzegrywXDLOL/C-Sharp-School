@@ -1,0 +1,15 @@
+C:\Users\uczen\Desktop\TicTacToe_Windowed\bin\Debug\TicTacToe_Windowed.exe.config
+C:\Users\uczen\Desktop\TicTacToe_Windowed\bin\Debug\TicTacToe_Windowed.exe
+C:\Users\uczen\Desktop\TicTacToe_Windowed\bin\Debug\TicTacToe_Windowed.pdb
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\MainWindow.g.cs
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\App.g.cs
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed_MarkupCompile.cache
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed_MarkupCompile.lref
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\MainWindow.baml
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed.g.resources
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed.Properties.Resources.resources
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed.csproj.GenerateResource.cache
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed.exe
+C:\Users\uczen\Desktop\TicTacToe_Windowed\obj\Debug\TicTacToe_Windowed.pdb
