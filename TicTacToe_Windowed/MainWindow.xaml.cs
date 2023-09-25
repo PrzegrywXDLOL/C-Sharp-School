@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +24,7 @@ namespace TicTacToe_Windowed
     /// </summary>
     public partial class MainWindow : Window
     {
+        Style btnX, btnO, clear, win;
         Button[,] buttons = new Button[3,3];
         bool xo = true;
         int counter = 0;
@@ -32,6 +34,11 @@ namespace TicTacToe_Windowed
         public MainWindow()
         {
             InitializeComponent();
+
+            btnX = this.FindResource("btnXclick") as Style;
+            btnO = this.FindResource("btnOclick") as Style;
+            clear = this.FindResource("clear") as Style;
+            win = this.FindResource("win") as Style;
 
             RandPlayer();
 
@@ -63,6 +70,7 @@ namespace TicTacToe_Windowed
                 if (xo)
                 {
                     button.Content = "X";
+                    button.Style = btnX;
                     if (CheckWin("X"))
                     {
                         if (player1.xo)
@@ -81,6 +89,7 @@ namespace TicTacToe_Windowed
                 else
                 {
                     button.Content = "O";
+                    button.Style = btnO;
                     if (CheckWin("O"))
                     {
                         if (player1.xo)
@@ -118,6 +127,17 @@ namespace TicTacToe_Windowed
 
                 if (horizontal || vertical)
                 {
+                    if (horizontal)
+                    {
+                        buttons[i, 0].Style = win;
+                        buttons[i, 1].Style = win;
+                        buttons[i, 2].Style = win;
+                    }else if (vertical)
+                    {
+                        buttons[0, i].Style = win;
+                        buttons[1, i].Style = win;
+                        buttons[2, i].Style = win;
+                    }
                     return true;
                 }
             }
@@ -126,12 +146,18 @@ namespace TicTacToe_Windowed
                 && (buttons[1, 1].Content.ToString() == xo) 
                 && buttons[2, 2].Content.ToString() == xo)
             {
+                buttons[0, 0].Style = win;
+                buttons[1, 1].Style = win;
+                buttons[2, 2].Style = win;
                 return true;
             }
             if ((buttons[0, 2].Content.ToString() == xo)
                 && (buttons[1, 1].Content.ToString() == xo)
                 && buttons[2, 0].Content.ToString() == xo)
             {
+                buttons[0, 2].Style = win;
+                buttons[1, 1].Style = win;
+                buttons[2, 0].Style = win;
                 return true;
             }
 
@@ -145,6 +171,7 @@ namespace TicTacToe_Windowed
             foreach (var button in buttons) 
             {
                 button.Content = "";
+                button.Style = clear;
             }
             RandPlayer();
         }
