@@ -1,0 +1,15 @@
+C:\Users\uczen\Desktop\RGB_Sliders\bin\Debug\RGB_Sliders.exe.config
+C:\Users\uczen\Desktop\RGB_Sliders\bin\Debug\RGB_Sliders.exe
+C:\Users\uczen\Desktop\RGB_Sliders\bin\Debug\RGB_Sliders.pdb
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\MainWindow.g.cs
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\App.g.cs
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders_MarkupCompile.cache
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders_MarkupCompile.lref
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\MainWindow.baml
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders.g.resources
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders.Properties.Resources.resources
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders.csproj.GenerateResource.cache
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders.exe
+C:\Users\uczen\Desktop\RGB_Sliders\obj\Debug\RGB_Sliders.pdb

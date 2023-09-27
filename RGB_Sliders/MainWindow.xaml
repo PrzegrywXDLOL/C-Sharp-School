@@ -1,0 +1,81 @@
+﻿<Window x:Class="RGB_Sliders.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RGB_Sliders"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <StackPanel>
+        <Frame x:Name="frame" Background="{Binding ElementName=Hex, Path=Text}"
+               Width="250"
+               Height="250"
+               Margin="25"
+               BorderBrush="Black"
+               BorderThickness="2"/>
+        <Grid Width="350" Margin="3">
+            <TextBlock Text="A: " FontWeight="Bold"/>
+            <Slider x:Name="sliderAlpha"
+                    Minimum="0"
+                    Maximum="255"
+                    Width="300"
+                    IsSnapToTickEnabled="True"
+                    TickFrequency="1"
+                    ValueChanged="slider_ValueChanged"/>
+            <TextBlock Text="{Binding Value, ElementName=sliderAlpha}"
+                    Width="20"
+                    TextAlignment="Center"
+                    HorizontalAlignment="Right"/>
+        </Grid>
+        <Grid Width="350" Margin="3">
+            <TextBlock Text="R: " FontWeight="Bold"/>
+            <Slider x:Name="sliderRed"
+                    Minimum="0"
+                    Maximum="255"
+                    Width="300"
+                    IsSnapToTickEnabled="True"
+                    TickFrequency="1"
+                    ValueChanged="slider_ValueChanged"/>
+            <TextBlock Text="{Binding Value, ElementName=sliderRed}"
+                    Width="20"
+                    TextAlignment="Center"
+                    HorizontalAlignment="Right"/>
+        </Grid>
+        <Grid Width="350" Margin="3">
+            <TextBlock Text="G: " FontWeight="Bold"/>
+            <Slider x:Name="sliderGreen"
+                    Minimum="0"
+                    Maximum="255"
+                    Width="300"
+                    IsSnapToTickEnabled="True"
+                    TickFrequency="1"
+                    ValueChanged="slider_ValueChanged"/>
+            <TextBlock Text="{Binding Value, ElementName=sliderGreen}"
+                    Width="20"
+                    TextAlignment="Center"
+                    HorizontalAlignment="Right"/>
+        </Grid>
+        <Grid Width="350" Margin="3">
+            <TextBlock Text="B: " FontWeight="Bold"/>
+            <Slider x:Name="sliderBlue"
+                    Minimum="0"
+                    Maximum="255"
+                    Width="300"
+                    IsSnapToTickEnabled="True"
+                    TickFrequency="1"
+                    ValueChanged="slider_ValueChanged"/>
+            <TextBlock Text="{Binding Value, ElementName=sliderBlue}"
+                    Width="20"
+                    TextAlignment="Center"
+                    HorizontalAlignment="Right"/>
+        </Grid>
+        <Grid Width="175" Margin="5">
+            <TextBlock Text="HEX: "/>
+            <TextBox x:Name="Hex"
+                     Text="#00000000"
+                     Width="100"
+                     TextAlignment="Center"/>
+        </Grid>
+        
+    </StackPanel>
+</Window>

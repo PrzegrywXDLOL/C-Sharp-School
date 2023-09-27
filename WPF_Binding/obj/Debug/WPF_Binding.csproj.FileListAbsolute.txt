@@ -1,0 +1,15 @@
+C:\Users\uczen\Desktop\WPF_Binding\bin\Debug\WPF_Binding.exe.config
+C:\Users\uczen\Desktop\WPF_Binding\bin\Debug\WPF_Binding.exe
+C:\Users\uczen\Desktop\WPF_Binding\bin\Debug\WPF_Binding.pdb
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\MainWindow.g.cs
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\App.g.cs
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding_MarkupCompile.cache
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding_MarkupCompile.lref
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\MainWindow.baml
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding.g.resources
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding.Properties.Resources.resources
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding.csproj.GenerateResource.cache
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding.exe
+C:\Users\uczen\Desktop\WPF_Binding\obj\Debug\WPF_Binding.pdb

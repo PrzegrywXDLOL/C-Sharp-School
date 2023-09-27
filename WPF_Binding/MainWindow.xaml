@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPF_Binding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Binding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <StackPanel>
+        <TextBox x:Name="pierwszy"
+                 TextChanged="pierwszy_TextChanged"/>
+        <TextBox x:Name="drugi" 
+                 TextChanged="drugi_TextChanged"/>
+        <StackPanel Orientation="Horizontal">
+            <Slider x:Name="slider" 
+                    Width="200"
+                    Minimum="10" 
+                    Maximum="30"
+                    ValueChanged="slider_ValueChanged"
+                    IsSnapToTickEnabled="True"
+                    TickFrequency="1"/>
+            <TextBox x:Name="txtSlider"
+                     Width="100"
+                     TextChanged="txtSlider_TextChanged"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
