@@ -1,0 +1,15 @@
+C:\Users\uczen\Desktop\Layout\bin\Debug\Layout.exe.config
+C:\Users\uczen\Desktop\Layout\bin\Debug\Layout.exe
+C:\Users\uczen\Desktop\Layout\bin\Debug\Layout.pdb
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\Layout\obj\Debug\MainWindow.g.cs
+C:\Users\uczen\Desktop\Layout\obj\Debug\App.g.cs
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout_MarkupCompile.cache
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout_MarkupCompile.lref
+C:\Users\uczen\Desktop\Layout\obj\Debug\MainWindow.baml
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout.g.resources
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout.Properties.Resources.resources
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout.csproj.GenerateResource.cache
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout.exe
+C:\Users\uczen\Desktop\Layout\obj\Debug\Layout.pdb
