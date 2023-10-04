@@ -4,6 +4,39 @@
              xmlns:local="clr-namespace:Layout"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <Trigger Property="Content" Value="0">
+                    <Setter Property="Background" Value="Gray"/>
+                </Trigger>
+                <Trigger Property="Content" Value="1">
+                    <Setter Property="Background" Value="Green"/>
+                </Trigger>
+                <Trigger Property="Content" Value="2">
+                    <Setter Property="Background" Value="Red"/>
+                </Trigger>
+                <Trigger Property="Content" Value="3">
+                    <Setter Property="Background" Value="Blue"/>
+                </Trigger>
+                <Trigger Property="Content" Value="4">
+                    <Setter Property="Background" Value="Yellow"/>
+                </Trigger>
+                <Trigger Property="Content" Value="5">
+                    <Setter Property="Background" Value="Lime"/>
+                </Trigger>
+                <Trigger Property="Content" Value="6">
+                    <Setter Property="Background" Value="Orange"/>
+                </Trigger>
+                <Trigger Property="Content" Value="7">
+                    <Setter Property="Background" Value="Purple"/>
+                </Trigger>
+                <Trigger Property="Content" Value="8">
+                    <Setter Property="Background" Value="Magenta"/>
+                </Trigger>
+                <Trigger Property="Content" Value="9">
+                    <Setter Property="Background" Value="Aquamarine"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Application.Resources>
 </Application>

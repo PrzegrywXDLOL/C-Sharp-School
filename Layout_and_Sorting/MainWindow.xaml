@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Layout"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="615">
+        Title="MainWindow" Height="550" Width="615">
     <!--<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" MinHeight="75"/>
@@ -56,10 +56,16 @@
     <DockPanel>
         <ScrollViewer DockPanel.Dock="Right" 
                       HorizontalScrollBarVisibility="Disabled"
-                      VerticalScrollBarVisibility="Auto">
+                      VerticalScrollBarVisibility="Auto"
+                      x:Name="scroll">
             <TextBlock Width="150" x:Name="text"/>
         </ScrollViewer>
-        <Button Content="Sortuj" DockPanel.Dock="Bottom" Click="Button_Click"/>
+        <ProgressBar x:Name="progress"
+                     DockPanel.Dock="Bottom"
+                     Height="50"/>
+        <Button Content="Sort" DockPanel.Dock="Bottom"
+                Height="50"
+                Click="Button_Click"/>
         <UniformGrid DockPanel.Dock="Left"
                      Width="450" Height="450" 
                      x:Name="uniform"/>
