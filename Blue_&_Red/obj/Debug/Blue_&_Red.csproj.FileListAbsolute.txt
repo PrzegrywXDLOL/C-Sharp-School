@@ -1,0 +1,15 @@
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue_&_Red.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\App.g.cs
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue_&_Red_MarkupCompile.cache
+C:\Users\uczen\Desktop\Blue_&_Red\bin\Debug\Blue_&_Red.exe.config
+C:\Users\uczen\Desktop\Blue_&_Red\bin\Debug\Blue_&_Red.exe
+C:\Users\uczen\Desktop\Blue_&_Red\bin\Debug\Blue_&_Red.pdb
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\MainWindow.g.cs
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue_&_Red_MarkupCompile.lref
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\MainWindow.baml
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue_&_Red.g.resources
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue___Red.Properties.Resources.resources
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue_&_Red.csproj.GenerateResource.cache
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue_&_Red.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue_&_Red.exe
+C:\Users\uczen\Desktop\Blue_&_Red\obj\Debug\Blue_&_Red.pdb
