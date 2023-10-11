@@ -22,9 +22,12 @@ namespace Blue___Red
     public partial class MainWindow : Window
     {
         Button[,] buttons = new Button[3, 5];
+        int countwin = 0;
+        Random random;
         public MainWindow()
         {
             InitializeComponent();
+            random = new Random();
 
             for (int i = 0; i < buttons.GetLength(0); i++)
             {
@@ -44,76 +47,75 @@ namespace Blue___Red
 
         private void OnClick(object sender, RoutedEventArgs e)
         {
+            bool color3 = false;
+            
+            if(countwin > 0 && countwin % 2 == 0)
+            {
+                color3 = true;
+            }
+
             var btn = sender as Button;
             var col = Grid.GetColumn(btn);
             var row = Grid.GetRow(btn);
 
-            try 
+            ChangeColor(row, col, color3);
+            ChangeColor(row - 1, col, color3);
+            ChangeColor(row + 1, col, color3);
+            ChangeColor(row, col - 1, color3);
+            ChangeColor(row, col + 1, color3);
+
+            if (CheckWin(color3))
             {
-                if ((string)buttons[row, col + 1].Content == "")
-                    buttons[row, col + 1].Content = " ";
+                MessageBoxResult result = MessageBox.Show("Congratulations You Won", "Win", MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.Yes)
+                {
+                    countwin++;
+                    ResetGame();
+                }
                 else
-                    buttons[row, col + 1].Content = "";
-
-            } catch { }
-            
-            try
-            {
-               if ((string)buttons[row + 1, col].Content == "")
-                    buttons[row + 1, col].Content = " ";
-                else
-                    buttons[row + 1, col].Content = "";
-            }
-            catch { }
-            
-            try 
-            {
-                if ((string)buttons[row - 1, col].Content == "")
-                    buttons[row - 1, col].Content = " ";
-                else
-                    buttons[row - 1, col].Content = "";
-            } catch { }
-            try
-            {
-                if ((string)buttons[row, col - 1].Content == "")
-                    buttons[row, col - 1].Content = " ";
-                else
-                    buttons[row, col - 1].Content = "";
-
-            } catch { }
-
-            if ((string)buttons[row, col].Content == "")
-                buttons[row, col].Content = " ";
-            else
-                buttons[row, col].Content = "";
-
-
-            if (CheckWin())
-            {
-                MessageBox.Show("Congratulations You Win!");
-                ResetGame();
+                {
+                    Environment.Exit(0);
+                }
             }
 
         }
 
-        private bool CheckWin()
+        private bool CheckWin(bool c3)
         {
-            bool win = true;
-
-            for (int i = 0; i < buttons.GetLength(0); i++)
+            if (!c3)
             {
-                for (int j = 0; j < buttons.GetLength(1); j++)
-                {
-                    if ((string)buttons[i, j].Content != " ")
-                        win = false;
-                }
+                bool win = true;
+                for (int i = 0; i < buttons.GetLength(0); i++)
+                    for (int j = 0; j < buttons.GetLength(1); j++)
+                        if ((string)buttons[i, j].Content != " ")
+                            win = false;
+                return win;
             }
+            else
+            {
+                bool red = true;
+                for (int i = 0; i < buttons.GetLength(0); i++)
+                    for (int j = 0; j < buttons.GetLength(1); j++)
+                        if ((string)buttons[i, j].Content != " ")
+                            red = false;
 
-            return win;
+                bool green = true;
+                for (int i = 0; i < buttons.GetLength(0); i++)
+                    for (int j = 0; j < buttons.GetLength(1); j++)
+                        if ((string)buttons[i, j].Content != "  ")
+                            green = false;
+
+                if (red || green)
+                    return true;
+                else
+                    return false;
+            }
         }
 
         private void ResetGame()
         {
+            int colors;
+
             for (int i = 0; i < buttons.GetLength(0); i++)
             {
                 for (int j = 0; j < buttons.GetLength(1); j++)
@@ -121,6 +123,42 @@ namespace Blue___Red
                     buttons[i, j].Content = "";
                 }
             }
+
+            if (countwin > 0 && countwin % 2 == 1)
+                colors = countwin + 1;
+            else
+                colors = countwin;
+
+            while(colors > 0)
+            {
+                int r = random.Next(3);
+                int c = random.Next(5);
+                if (buttons[r,c].Content.ToString() == "".ToString())
+                {
+                    buttons[r,c].Content = " ".ToString();
+                    colors--;
+                }
+            }
+
+        }
+
+        private void ChangeColor(int row, int col, bool c3)
+        {
+            try
+            {
+                if ((string)buttons[row, col].Content == "")
+                    buttons[row, col].Content = " ";
+                else if (c3)
+                {
+                    if ((string)buttons[row, col].Content == " ")
+                        buttons[row, col].Content = "  ";
+                    else
+                        buttons[row, col].Content = "";
+                }
+                else
+                    buttons[row, col].Content = "";
+            }
+            catch { }
         }
     }
 }

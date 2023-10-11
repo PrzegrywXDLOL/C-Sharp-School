@@ -1,0 +1,15 @@
+C:\Users\uczen\Desktop\Numerical_Tetris\bin\Debug\Numerical_Tetris.exe.config
+C:\Users\uczen\Desktop\Numerical_Tetris\bin\Debug\Numerical_Tetris.exe
+C:\Users\uczen\Desktop\Numerical_Tetris\bin\Debug\Numerical_Tetris.pdb
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\MainWindow.g.cs
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\App.g.cs
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris_MarkupCompile.cache
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris_MarkupCompile.lref
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\MainWindow.baml
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris.g.resources
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris.Properties.Resources.resources
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris.csproj.GenerateResource.cache
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris.exe
+C:\Users\uczen\Desktop\Numerical_Tetris\obj\Debug\Numerical_Tetris.pdb

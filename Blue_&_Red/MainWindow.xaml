@@ -15,6 +15,9 @@
                 <Trigger Property="Content" Value=" ">
                     <Setter Property="Background" Value="Red"/>
                 </Trigger>
+                <Trigger Property="Content" Value="  ">
+                    <Setter Property="Background" Value="Green"/>
+                </Trigger>
             </Style.Triggers>
         </Style>
     </Window.Resources>
