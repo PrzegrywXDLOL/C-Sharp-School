@@ -1,0 +1,15 @@
+C:\Users\uczen\Desktop\Memory\Memory\bin\Debug\Memory.exe.config
+C:\Users\uczen\Desktop\Memory\Memory\bin\Debug\Memory.exe
+C:\Users\uczen\Desktop\Memory\Memory\bin\Debug\Memory.pdb
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\MainWindow.g.cs
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\App.g.cs
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory_MarkupCompile.cache
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory_MarkupCompile.lref
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\MainWindow.baml
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory.g.resources
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory.Properties.Resources.resources
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory.csproj.GenerateResource.cache
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory.exe
+C:\Users\uczen\Desktop\Memory\Memory\obj\Debug\Memory.pdb
