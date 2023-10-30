@@ -1,0 +1,51 @@
+﻿<Window x:Class="Connect_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Connect_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="600">
+    <Window.Resources>
+        <Style TargetType="{x:Type Ellipse}">
+            <Style.Triggers>
+                <Trigger Property="Name" Value="blue">
+                    <Setter Property="Fill" Value="Blue"/>
+                </Trigger>
+                <Trigger Property="Name" Value="red">
+                    <Setter Property="Fill" Value="Red"/>
+                </Trigger>
+                <Trigger Property="Name" Value="blank">
+                    <Setter Property="Fill" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Polygon Points="0,0 50,0 25,50" Fill="DarkGray"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="white"/>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="board" Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>

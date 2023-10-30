@@ -1,0 +1,35 @@
+﻿<Window x:Class="Lists_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lists_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <StackPanel>
+        <DataGrid x:Name="list"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  SelectionMode="Single"
+                  />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Add"
+                    Grid.Column="0"
+                    Click="Button_Click"/>
+            <Button Content="Edit"
+                    Grid.Column="1"
+                    Click="Button_Click_1"/>
+            <Button Content="Delete"
+                    Grid.Column="2"
+                    Click="Button_Click_2"/>
+        </Grid>
+        <TextBox x:Name="Search"
+                 Margin="5"
+                 TextChanged="Search_TextChanged"/>
+    </StackPanel>
+</Window>
