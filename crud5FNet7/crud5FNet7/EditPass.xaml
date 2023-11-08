@@ -1,0 +1,16 @@
+﻿<Window x:Class="crud5FNet7.EditPass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:crud5FNet7"
+        mc:Ignorable="d"
+        Title="EditPass" Height="150" Width="150">
+    <StackPanel>
+        <TextBox x:Name="oldPass"/>
+        <TextBox x:Name="newPass1"/>
+        <TextBox x:Name="newPass2"/>
+        <Button Content="Change Password"
+                Click="Button_Click"/>
+    </StackPanel>
+</Window>
