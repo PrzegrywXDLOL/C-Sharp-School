@@ -20,13 +20,18 @@ namespace WolfAndSheep
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly WolfAndSheepDbContext _dbContext;
         bool whoMove = true, wolfLose, sheepLose;
         Ellipse wolf;
         Ellipse sheep;
         List<Ellipse> moveList;
         public MainWindow()
         {
+            _dbContext = new WolfAndSheepDbContext();
             moveList = new List<Ellipse>();
+
+            _dbContext.Moves.RemoveRange(_dbContext.Moves);
+            _dbContext.SaveChanges();
 
             InitializeComponent();
 
@@ -77,63 +82,68 @@ namespace WolfAndSheep
                 wolf = (Ellipse)sender;
                 int row = Grid.GetRow(wolf);
                 int col = Grid.GetColumn(wolf);
+                
                 GenerateMoveList(4);
-                row--;
-                if (row >= 0)
-                {
-                    col++;
-                    if (col <= 7)
-                    {
-                        ShowMove(row, col, 0);
-
-                    }
-                    col -= 2;
-                    if (col >= 0)
-                        ShowMove(row, col, 1);
-                }
-                row += 2;
-
-                if (row <= 7)
-                {
-                    if (col >= 0)
-                        ShowMove(row, col, 2);
-                    col += 2;
-                    if (col <= 7)
-                        ShowMove(row, col, 3);
-                }
-                if (wolfLose)
-                {
-                    MessageBox.Show("Wolf lost");
-                }               
+                WolfGhost(row, col, false);
+                             
             }
 
+        }
+
+        private void WolfGhost(int row, int col, bool check) 
+        {
+            bool up = false;
+            row--;
+            if (row >= 0) {
+                up = true;
+                col++;
+                if (col <= 7) {
+                    ShowMove(row, col, 0, check);
+
+                }
+                col -= 2;
+                if (col >= 0)
+                    ShowMove(row, col, 1, check);
+            }
+            
+            if (!up) col--;
+            row += 2;
+
+            if (row <= 7) {
+                if (col >= 0)
+                    ShowMove(row, col, 2, check);
+                col += 2;
+                if (col <= 7)
+                    ShowMove(row, col, 3, check);
+            }
         }
 
         private void SheepClick(object sender, MouseButtonEventArgs e)
         {
             if (!whoMove)
             {
-
-
                 sheep = (Ellipse)sender;
                 int row = Grid.GetRow(sheep);
                 int col = Grid.GetColumn(sheep);
+                
                 GenerateMoveList(2);
-                row++;
-                if (row <= 7)
-                {
-                    col++;
-                    if (col <= 7)
-                    {
-                        ShowMove(row, col, 0);
-                    }
-                    col -= 2;
-                    if (col >= 0)
-                    {
-                        ShowMove(row, col, 1);
-                    }
+                SheepGhost(row, col, false);   
+            }
+        }
 
+        private void SheepGhost(int row, int col, bool check) 
+        {
+            row++;
+            if (row <= 7) {
+                col++;
+                if (col <= 7) {
+                    ShowMove(row, col, 0, check);
                 }
+                col -= 2;
+                if (col >= 0) {
+                    ShowMove(row, col, 1, check);
+                }
+
             }
         }
         private void GenerateMoveList(int count)
@@ -156,7 +166,7 @@ namespace WolfAndSheep
                 moveList.Add(temp);
             }
         }
-        private void ShowMove(int row, int col, int count)
+        private void ShowMove(int row, int col, int count, bool check)
         {
             var IsEllipse = board.Children
                 .Cast<UIElement>()
@@ -165,9 +175,12 @@ namespace WolfAndSheep
 
             if (IsEllipse.GetType() == typeof(Rectangle))
             {
-                board.Children.Add(moveList[count]);
-                Grid.SetRow(moveList[count], row);
-                Grid.SetColumn(moveList[count], col);
+                if (!check) 
+                    {
+                    board.Children.Add(moveList[count]);
+                    Grid.SetRow(moveList[count], row);
+                    Grid.SetColumn(moveList[count], col);
+                }
                 wolfLose = false;
                 sheepLose = false;
             }
@@ -191,17 +204,54 @@ namespace WolfAndSheep
                 move = sheep;
                 whoMove = true;
             }
+
+            Move m = new Move() {
+                BeforeRow = Grid.GetRow(move),
+                BeforeCol = Grid.GetColumn(move),
+                AfterRow = row,
+                AfterCol = col
+            };
+
+            _dbContext.Moves.Add(m);
+            _dbContext.SaveChanges();
                 
             Grid.SetRow(move, row);
             Grid.SetColumn(move, col);
 
             IsLose();
+            WolfWin();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e) 
+        {
+            var move = _dbContext.Moves
+                .OrderBy(x => x.Id)
+                .LastOrDefault();
+            if(move != null) 
+            {
+                var ellipse = board.Children
+                    .Cast<UIElement>()
+                    .LastOrDefault(x => Grid.GetRow(x) == move.AfterRow
+                        && Grid.GetColumn(x) == move.AfterCol);
+                
+                Grid.SetRow(ellipse, move.BeforeRow);
+                Grid.SetColumn(ellipse, move.BeforeCol);
+
+                _dbContext.Remove(move);
+                _dbContext.SaveChanges();
+
+                if (whoMove)
+                    whoMove = false;
+                else
+                    whoMove = true;
+            }
         }
 
         private void IsLose()
         {
-            wolfLose = true;
             sheepLose = true;
+            int row, col;
+
             var list = board.Children
                 .Cast<UIElement>()
                 .ToList()
@@ -209,18 +259,48 @@ namespace WolfAndSheep
 
             foreach(Ellipse e in list)
             {
-                int row = Grid.GetRow(e);
-                int col = Grid.GetColumn(e);
+                row = Grid.GetRow(e);
+                col = Grid.GetColumn(e);
 
                 if (e.Fill == Brushes.Aqua)
-                {
-                    
-                }
-                else
-                {
+                    SheepGhost(row, col, true);
+            }
+            if (sheepLose)
+                MessageBox.Show("Sheep lost");
 
+            wolfLose = true;
+            row = Grid.GetRow(wolf);
+            col = Grid.GetColumn(wolf);
+            WolfGhost(row, col, true);
+            if (wolfLose)
+                MessageBox.Show("Wolf lost");
+        }
+        private void WolfWin() 
+        {
+            bool win = true;
+
+            int rowWolf = Grid.GetRow(wolf);
+
+            var list = board.Children
+                .Cast<UIElement>()
+                .ToList()
+                .FindAll(e => e.GetType() == typeof(Ellipse));
+
+            foreach(Ellipse e in list) 
+            {
+                if(e.Fill == Brushes.Aqua) 
+                    {
+                    int row = Grid.GetRow(e);
+                    if (row < rowWolf) 
+                        {
+                        win = false;
+                        break;
+                    }
                 }
             }
+
+            if (win)
+                MessageBox.Show("Wolf Won");
         }
     }
 }

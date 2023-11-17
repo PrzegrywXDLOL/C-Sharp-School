@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WolfAndSheep"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800">
+        Title="MainWindow" Height="850" Width="800">
     <Grid x:Name="board"> 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -26,6 +26,9 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
+        <Button Content="Back" Click="Button_Click"
+                Grid.Row="8"/>
     </Grid>
 </Window>
