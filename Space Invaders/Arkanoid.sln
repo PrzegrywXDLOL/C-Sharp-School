@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkanoid", "Arkanoid.csproj", "{11F952B5-1BEA-452E-B055-E0138702E7B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11F952B5-1BEA-452E-B055-E0138702E7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F952B5-1BEA-452E-B055-E0138702E7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F952B5-1BEA-452E-B055-E0138702E7B9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{11F952B5-1BEA-452E-B055-E0138702E7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F952B5-1BEA-452E-B055-E0138702E7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F952B5-1BEA-452E-B055-E0138702E7B9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D37F689-0875-4D82-B587-2D6E7D9D98E6}
+	EndGlobalSection
+EndGlobal
