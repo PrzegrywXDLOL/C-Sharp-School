@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ToDo5f.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ToDo5f"
+    Shell.FlyoutBehavior="Disabled">
+
+    <Shell.Resources>
+        <Style TargetType="TabBar">
+            <Setter Property="Shell.TabBarBackgroundColor" Value="AliceBlue"/>
+            <Setter Property="Shell.TabBarTitleColor" Value="Blue"/>
+            <Setter Property="Shell.TabBarForegroundColor" Value="Red"/>
+            <Setter Property="Shell.TabBarUnselectedColor" Value="Green"/>
+        </Style>
+    </Shell.Resources>
+    
+    <TabBar>
+        <Tab Title="List"
+             Icon="list.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="Add"
+             Icon="edit.png">
+            <ShellContent ContentTemplate="{DataTemplate local:NewPage1}"/>
+        </Tab>
+        <Tab Title="Finish"
+     Icon="bin.png">
+            <ShellContent ContentTemplate="{DataTemplate local:NewPage3}"/>
+        </Tab>
+    </TabBar>
+    
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+
+</Shell>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDo5f.NewPage2"
+             Title="NewPage2">
+    <VerticalStackLayout>
+        <VerticalStackLayout.GestureRecognizers>
+            <SwipeGestureRecognizer
+        Direction="Right"
+        Swiped="SwipeGestureRecognizer_Swiped"/>
+        </VerticalStackLayout.GestureRecognizers>
+
+        <Entry x:Name="subjectEntry"/>
+        <Editor x:Name="descroptionEditor"
+        AutoSize="TextChanges"/>
+        <Button Text="Add" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
